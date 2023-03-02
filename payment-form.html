@@ -14,37 +14,37 @@
         <legend>Contact Information</legend>
             <label>
                 Mx.<br>
-                <input type="radio" name="prefix-mx"/>
-                
+                <input type="radio" name="prefix-mx" checked/>
+    
             </label><br>
     
             <label>
                 Mr.<br>
-                <input type="radio" name="prefix-mr"/>
+                <input type="radio" name="prefix-mr" checked/>
                
             </label>  <br>
 
             <label>
                 Ms.<br>
-                <input type="radio" name="prefix-ms"/>
+                <input type="radio" name="prefix-ms" checked/>
     
             </label><br>
 
             <label>
                 Mrs.<br>
-                <input type="radio" name="prefix-mrs"/>
+                <input type="radio" name="prefix-mrs" checked/>
         
             </label><br>
             
 
             <label>
                 Name<br>
-                <input type="text" placeholder="Enter name..." name="prefix-mrs"/>
+                <input type="text" placeholder="Name" name="name" required/>
         
             </label><br>
             <label>
                 Email <br>
-                <input type="text" placeholder="Enter email..." name="prefix-mrs"/>
+                <input type="text" placeholder="Email" name="email" required/>
         
             </label><br>
 
@@ -56,7 +56,7 @@
             <select id="Visa" name="Card Type">
               <!-- <option>-- Select a Card --</option> -->
               <option value="visa">Visa</option>
-              <option value="masterCard">Mastercard</option>
+              <option value="mastercard">Mastercard</option>
               <option value="american-express">American Express</option>
               <option value="discover">Discover</option>
             </select>
@@ -64,19 +64,17 @@
           </label>
           <label>
              <br>
-            <input type="text" placeholder="xxxx xxxx xxxx xxxx" name="card number"/>
+            <input type="text" placeholder="xxxx xxxx xxxx xxxx" name="card number" required/>
     
         </label><br>
         <label>
             Expiration Date <br>
-            <input type="text" name="Expiration Date"/>
-    
+            <input type="text" name="Expiration Date" id='expiration-date' required/>
         </label><br>
     </fieldset>
     <button type="submit">Submit Payment</button>
+    <input type="submit" value="Submit Payment">
 
-
-
-    </form>
+</form>
 </body>
 </html>

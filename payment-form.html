@@ -8,9 +8,7 @@
 </head>
 <body>
   <h1>Payment Form</h1>
-  <p>
-    Required fields are marked by *
-  </p>
+  <p>Required fields are marked by *</p>
   <form>
     <fieldset>
       <legend>Contact Information</legend>
@@ -31,12 +29,12 @@
         <input type="radio" name="salute" id="mx"><br></input>
       </label>
       <label>
-        Email<br>
-        <input type="email" placeholder="Email" name="email" id="email" >Email</input><br>
+        Name<br>
+        <input type="text"  id="name" placeholder="Name" name="name" required></input><br>
       </label>
       <label>
-        Name<br>
-        <input type="text" placeholder="Name" name="name" id="name" >Name</input><br>
+        Email<br>
+        <input type="email"  id="email" placeholder="Email" name="email" required></input><br>
       </label>
       
     </fieldset>
@@ -45,7 +43,7 @@
       
       <select name="credit-card" id="credit-card">
         <option value="visa">Visa</option>
-        <option value="mastercard">MasterCard</option>
+        <option value="mastercard">Mastercard</option>
         <option value="american-express">American Express</option>
         <option value="discover">Discover</option>
       </select>

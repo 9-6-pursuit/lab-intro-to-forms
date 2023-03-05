@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Title</title>
+    </head>
+    <body>
+        <p><h1>Payment Form</h1></p>
+        <p>Required fields are marked by *
+        </p> 
+        <Hr>
+            <label>
+                <h4>Contact Information </h4>
+            </label>
+            <label>
+                Mx.
+                <input id="mx" name="reference" type="radio" value="mx" checked/>
+            </label>
+            <label>
+                Mr.
+                <input id="mr" name="reference" type="radio" value="mr" />
+            </label>
+            <label>
+                Ms. 
+                <input id="ms" name="reference" type="radio" value="ms" />
+            </label>
+            <label>
+                Mrs.
+                <input id="mrs" name="reference" type="radio" value="mrs"/>
+            </label><br>
+            <p><form>
+            <label for="name">
+                Name
+                    <input id="name" name="person-name" type="text" placeholder="First and Last Name..." />  
+            </label>
+            </form></p>
+           <p><form>
+            <label for="email">
+                Email
+                <input id="email" name="person-email" type="email" placeholder="Enter Email Here..."/>
+            </label>
+            </form></p><br>
+            <p><h4>Payment Information</h4></p>
+            <form>
+                <select id="credit-card-info" name="card">
+                    <option>--Card Type--</option>
+                    <option value="visa"Visa></option>
+                    <option value="mastercard"Mastercard></option>
+                    <option value="american-express"American Express></option>
+                    <option valie="discover"Discover></option>
+                </select>
+                <label>
+                    Credit Card Number
+                </label>
+            </form>
+        <form>
+        <input id="card" name="credit-card" type="tel" placeholder="xxxx xxxx xxxx xxxx"/>
+        </form>
+            <label for="expiration-date">
+                Expiration Date
+            </label>
+        <form>
+            <input id="expiration-date" name="date" type="text"/>
+        </form>
+        <button type="submit">Submit</button>
+    </body>
+</html>

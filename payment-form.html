@@ -37,13 +37,48 @@
         </label>
         <br />
         <label for="name"
-          >Name <br /><input type="text" name="name" id="name"
+          >Name <br /><input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
         /></label>
         <br />
         <label for="email"
-          >Email <br /><input type="email" name="email" id="email"
+          >Email <br /><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
         /></label>
       </fieldset>
+      <fieldset>
+        <legend>Payment Information</legend>
+        <select id="card-type" name="card-type">
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="american-express">American Express</option>
+          <option value="discover">Discover</option>
+        </select>
+        Credit Card Number
+        <br />
+        <input
+          type="tel"
+          name="cc-number"
+          id="cc-number"
+          placeholder="xxxx xxxx xxxx xxxx"
+          required
+        />
+        <br />
+        <label
+          >Expiration Date
+          <br />
+          <input type="text" name="expiration-date" id="expiration-date" required/>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit Payment" />
     </form>
   </body>
 </html>
